@@ -3,25 +3,26 @@ const converterBtn = document.querySelector(".converter__btn");
 converterBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
 
-  const romanFigures = ["C", "D", "I", "L", "M", "V", "X"];
   const value = document.querySelector(".converter__input").value;
   const romanNumeral = encoder(value);
-  if (!parseInt(value)) {
-    document.querySelector(".card__form__error").textContent =
-      "Sorry number must contain only digits";
-    document.querySelector(".roman-numeral").textContent = "";
-  } else {
-    document.querySelector(".roman-numeral").textContent = romanNumeral;
-  }
+  document.querySelector(".roman-numeral").textContent = romanNumeral;
 });
 
 // Handle event listener for keyboard input and validates input
 const converterInput = document.querySelector(".converter__input");
 converterInput.addEventListener("keyup", function() {
-  const value = this.value;
-  if (parseInt(value) > 3999) {
+  const romanFigures = ["C", "D", "I", "L", "M", "V", "X"];
+  const isNumber = Number(this.value) ? true : false;
+
+  if (parseInt(this.value) > 3999 && isNumber) {
     document.querySelector(".card__form__error").textContent =
       "Sorry, number must be less than 4000";
+    document
+      .querySelector(".converter__btn")
+      .setAttribute("disabled", "disabled");
+  } else if (!isNumber && !romanFigures.includes(this.value)) {
+    document.querySelector(".card__form__error").textContent =
+      "Sorry, invalid Roman Figure string";
     document
       .querySelector(".converter__btn")
       .setAttribute("disabled", "disabled");
