@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roman Numeral Encoder</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="converter">
+        <!-- Begin display logo -->
+        <a href="https://andela.com" class="converter__logo">
+            <img src="https://andela.com/wp-content/uploads/2018/08/Andela-logo@2x.png"
+                alt="Andela Logo">
+        </a>
+        <!-- End display logo -->
+        <!-- Begin converter input container -->
+        <div class="card card--converter">
+            <form action="" class="card__form">
+                <div class="card__form__item">
+                    <input class="converter__input" type="text" placeholder="Enter number"
+                        max="3999">
+                </div>
+                <div class="card__form__item">
+                    <button class="converter__btn" type="submit">Convert</button>
+                </div>
+                <span class="card__form__error"></span>
+            </form>
+        </div>
+        <!-- End converter input converter -->
+        <!-- Begin conversion display card -->
+        <div class="card card--display">
+            <h1 class="roman-numeral"></h1>
+        </div>
+        <!-- End conversion display card -->
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+input,
+button {
+  border: unset;
+  padding: unset;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+main.converter {
+  background: linear-gradient(180deg, #2a49b7 0%, #a2b3f0 100%);
+  height: 100vh;
+  position: relative;
+}
+
+.converter__logo img {
+  height: 35px;
+  margin: 40px 30px;
+}
+
+.converter__input,
+.converter__btn {
+  border-radius: 4px;
+  color: #121e4a;
+  font-size: 1rem;
+  height: 45px;
+}
+
+.converter__input {
+  min-width: 240px;
+  padding: 0 20px;
+}
+
+.converter__btn {
+  background: #ffc914;
+  min-width: 100px;
+  position: relative;
+  right: -50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  border-radius: 5px;
+}
+
+.card__form {
+  float: right;
+  margin: 40px 70px;
+  position: relative;
+}
+
+.card__form__item {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.card__form__error {
+  color: #ffffff;
+}
+
+.card--converter {
+  background: #2f51cb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 200px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.card--display {
+  background: #ffffff;
+  box-shadow: 0px 8px 31px rgba(18, 30, 74, 0.9);
+  height: 240px;
+  left: 290px;
+  position: absolute;
+  top: 55px;
+  width: 450px;
+}
+
+.roman-numeral {
+  color: #2f51cb;
+  font-family: "Noto Serif", "Lato", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
