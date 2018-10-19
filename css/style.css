@@ -72,10 +72,10 @@ main.converter {
 .card--display {
   background: #ffffff;
   box-shadow: 0px 8px 31px rgba(18, 30, 74, 0.9);
-  height: 240px;
+  height: 75px;
   left: 290px;
   position: absolute;
-  top: 55px;
+  top: 155px;
   width: 450px;
 }
 

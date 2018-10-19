@@ -3,6 +3,7 @@ const converterBtn = document.querySelector(".converter__btn");
 converterBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
 
+  const romanFigures = ["C", "D", "I", "L", "M", "V", "X"];
   const value = document.querySelector(".converter__input").value;
   const romanNumeral = encoder(value);
   if (!parseInt(value)) {
@@ -55,9 +56,7 @@ function encoder(number) {
   };
   const digits = Object.keys(romanLiterals).reverse();
 
-  if () {
-
-  }
+  console.log(typeof number);
 
   if (romanLiterals[number]) {
     return romanLiterals[number];
